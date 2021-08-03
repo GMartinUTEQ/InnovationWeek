@@ -34,8 +34,8 @@
                         <div class="row">
                         
                         <div class="col-sm-12">
-                            <h3 class="card-title">Semana de innovación</h3>
-                            <h5 class="card-text">REPORTE DE EVALUACIÓN DE PROYECTOS</h5>
+                            <h3 class="card-title">Sistema de evaluación de la semana de innovación</h3>
+                            <h5 class="card-text">CRÉDITOS</h5>
                         </div>
                         </div>
                         
@@ -43,22 +43,19 @@
                     
                 </div>
                 <div class="card-body">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" >#</th>
-                                <th scope="col">Proyecto</th>
-                                <th scope="col">Asesor</th>
-                                <th scope="col">División</th>
-                                <th scope="col">Puntuación</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php include("datosreporte.php"); ?>
-                            
-                        </tbody>
-                        </table>
-                        
+                    <div class="text-center">
+                        Desarrollado Por:<br/>
+                        Gabriel A. Martín Vega.<br/>
+                        <a href="mailto:gabriel.martin@uteq.edu.mx">gabriel.martin@uteq.edu.mx</a><br/><br/>
+                        para:<br/>
+                        <img style="max-height:80px" src="../assets/img/LogoTalentos.png" >
+                        <br/>
+                        <img style="max-height:80px" src="../assets/img/Logo_Uteq.png" >
+                        <br/>
+                        a través de:
+                        <br/>
+                        <img style="max-height:120px" src="../assets/img/LogoCidtai.png" >
+                    </div>
                 </div>
                 
             </div>

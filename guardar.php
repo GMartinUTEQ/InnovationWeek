@@ -2,13 +2,7 @@
 
 //var_dump($_POST);
 foreach($_POST as $key => $value) {
-    $servername = "localhost";
-    $username = "root";
-    $password = "desarrollo";
-    $dbname = "iw";
-    
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    include("conexion.php");
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -49,6 +43,7 @@ foreach($_POST as $key => $value) {
         //echo $key . " - " . $value . "<br/>";
     }
     $conn->close();
+    echo "<script>alert('Gracias por su evaluación');window.location='Dashboard∑.php';</script>";
 }
 
 ?>

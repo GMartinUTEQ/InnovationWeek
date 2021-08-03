@@ -45,17 +45,16 @@
                     
                 </div>
                 <div class="card-body">
-                    <form action="guardar.php" method="post">
-                    <br/> 
+                    <form  onsubmit="return validateForm()" id="regForm" action="guardar.php" method="post">
+                   
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="Proyecto">Nombre del proyecto:</label>
                         </div>
                         <select class="custom-select" require id="Proyecto" name="Proyecto">
-                            <option selected>Seleccione...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="0" selected>Seleccione...</option>
+                            <?php include("opcionesproyecto.php"); ?>
+
                         </select>
                     </div>
                     <div class="input-group mb-3">
@@ -63,7 +62,7 @@
                             <label class="input-group-text" for="tipoProyecto">Tipo de Proyecto:&emsp;&emsp;</label>
                         </div>
                         <select class="custom-select" require id="tipoProyecto" name="tipoProyecto">
-                            <option selected>Seleccione...</option>
+                            <option value="0" selected>Seleccione...</option>
                             <option value="1">Investigación aplicada</option>
                             <option value="2">Mejora a instalaciones</option>
                             <option value="3">Servicio</option>
@@ -75,14 +74,14 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Nombre del evaluador:</span>
                         </div>
-                        <input type="text" class="form-control" id="nombreEvaluador" name="nombreEvaluador" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" id="nombreEvaluador" name="nombreEvaluador" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" required>
                     </div>
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Correo del evaluador:&nbsp;&nbsp;</span>
                         </div>
-                        <input type="mail" class="form-control" id="correoEvaluador" name="correoEvaluador" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="mail" class="form-control" id="correoEvaluador" name="correoEvaluador" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1" required>
                     </div>
 
                     <hr/>
@@ -239,21 +238,25 @@
                                 
                             </div>
                         </div>
-                    
+                        <div class="float">
+                            <i class="fas fa-check-square my-float"></i> Puntos: <span id="puntosflot">0</span>
+                        </div>
                         <br/>
                         <input type="submit" class="btn btn-primary" value="Enviar"/>
-                    </div>
-                </form>
+                        
+                    </form>
                 </div>
+                <div class="card-footer text-center">
+                    UTEQ 2021. Desarrollado por: <a href="mailto:gabriel.martin@uteq.edu.mx">Gabriel A. Martín Vega</a>
+                </div>
+            </div>
 
-                <div class="float">
-                <i class="fas fa-check-square my-float"></i> Puntos: <span id="puntosflot">0</span>
-                </div>
+            
 
             
         </div>
     </div>
-
+      
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->

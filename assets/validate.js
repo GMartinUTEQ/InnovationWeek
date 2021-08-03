@@ -15,7 +15,7 @@
             }
         }
         document.getElementById("puntosflot").textContent=checked;
-        
+
         //alert(checked);
         var tot = document.getElementById("total");
         tot.value = checked;
@@ -26,3 +26,45 @@
         return true;
         
     };
+
+    function validateForm()
+    {
+        var retorno = false;
+        var tot = document.getElementById("Proyecto");
+        if(tot.value > "0")
+        {
+            retorno = true;
+        }
+        else
+        {
+            alert("Seleccione por favor un proyecto");
+            retorno = false;
+        }
+        var tot = document.getElementById("tipoProyecto");
+        if(tot.value > "0")
+        {
+            retorno = true;
+        }
+        else
+        {
+            alert("Seleccione por favor un tipo proyecto");
+            retorno = false;
+        }
+        /*var tot = document.getElementById("nombreEvaluador");
+        if(tot.value > "0")
+        {
+            
+            retorno = true;
+        }
+        else
+        {
+            alert("Seleccione por favor un tipo proyecto");
+        }*/
+        
+        return retorno;
+    }
+
+    
+    
+
+

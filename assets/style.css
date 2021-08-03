@@ -267,8 +267,8 @@ a.article:hover {
    
 	position:fixed;
 	width:170px;
-	height:60px;
-	bottom:40px;
+	height:44px;
+	bottom:80px;
 	right:40px;
 	background-color:#0275d8;
 	color:#FFF;
@@ -278,5 +278,5 @@ a.article:hover {
 }
 
 .my-float{
-	margin-top:22px;
+	margin-top:12px;
 }
