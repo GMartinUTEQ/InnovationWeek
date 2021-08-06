@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Sistema de administración T199</title>
+    <title>UTEQ | INNOVATION WEEK <?= date("Y") ?></title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -40,8 +40,9 @@
                 <div class="text-center">
                     <img style="max-height:150px;margin-top:70px" src="assets/img/Logo_uteq.png"/>
                     <h2 style="margin-top:45px">Acceso al sistema</h2>
+                    <h4 >Semana de innovación <?= date("Y") ?></h4>
                 </div>
-                <form action="dashboard.php" method="post" class="was-validated">
+                <form action="valida.php" method="post" class="was-validated">
                     
                     <div class="form-group" style="margin-top:45px">
                         <label for="usrpass">Contraseña:</label>
@@ -54,7 +55,7 @@
                 </div>
             </div>
 
-            
+            <div class="text-center" style="text-decoration: none !important;color:hotpink;"><a class="text-decoration-none" href="admin/index.php">[Admin]</a></div>
         </div>
     </div>
 

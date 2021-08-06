@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["Validado"]) || $_SESSION["Validado"] == "NO")
+{
+   echo "<script>window.location.href='index.php'</script>";
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -23,8 +31,7 @@
 
     <div class="wrapper">
         <!-- Sidebar  -->
-        <!--?php include("menu.html"); ?-->
-
+     
         <!-- Page Content  -->
         <div id="content" style="margin-top:20px">
 
@@ -130,8 +137,6 @@
                                 </div>
                             </div>
                         </div>
-                 
-                        <!-- ========= -->
                         <p class="instrucciones">
                             2. Factibilidad técnica.
                         </p>
