@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["ValidaAdmin"]) || $_SESSION["ValidaAdmin"] == "NO")
+{
+    //echo "sesion" . $_SESSION["ValidaAdmin"];
+   echo "<script>window.location.href='index.php'</script>";
+}
+?>
 <!DOCTYPE html>
 <html>
 

@@ -22,7 +22,7 @@ if ($result->num_rows > 0)
     if(md5($_REQUEST["usrpass"]) == $row["contrasena"])
     {
         $_SESSION["Validado"] = "SI"; 
-        echo "<script>alert('Bienvenido.');window.location.href='Dashboard.php'</script>";
+        echo "<script>alert('Bienvenido.');window.location.href='DashBoard.php'</script>";
     }
     else
     {

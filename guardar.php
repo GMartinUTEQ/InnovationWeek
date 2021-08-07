@@ -27,7 +27,7 @@ foreach($_POST as $key => $value) {
 
     }
     $conn->close();
-    echo "<script>alert('Gracias por su evaluación');window.location='Dashboard∑.php';</script>";
+    echo "<script>alert('Gracias por su evaluación');window.location='DashBoard.php';</script>";
 }
 
 ?>

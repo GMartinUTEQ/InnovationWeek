@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="text-center" style="text-decoration: none !important;color:hotpink;"><a class="text-decoration-none" href="admin/index.php">[Admin]</a></div>
+            <div class="text-center" style="text-decoration: none !important;color:hotpink;"><a class="text-decoration-none" href="Admin/index.php">[Admin]</a></div>
         </div>
     </div>
 

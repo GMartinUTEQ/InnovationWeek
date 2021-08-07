@@ -11,7 +11,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo '<option value="' . $row["idproyecto"] . '">' . strtoupper($row["nombreproyecto"]) . '</option>
+    $enc = utf8_encode($row["nombreproyecto"]);
+    echo '<option value="' . $row["idproyecto"] . '">' . strtoupper($enc) . '</option>
                             ';
   }
 } else {

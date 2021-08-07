@@ -42,7 +42,7 @@
                     <h2 style="margin-top:45px">Acceso al sistema de administración</h2>
                     <h4 >Semana de innovación <?= date("Y") ?></h4>
                 </div>
-                <form action="dashboard.php" method="post" class="was-validated">
+                <form action="valida.php" method="post" class="was-validated">
                     
                     <div class="form-group" style="margin-top:45px">
                         <label for="usrpass">Contraseña:</label>

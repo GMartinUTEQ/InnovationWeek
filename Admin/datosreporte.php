@@ -19,45 +19,45 @@ if ($result->num_rows > 0) {
       
       $divActual = $row["division"];
       $contador = 1;
-      echo "<tr><td colspan='5' class='text-center'><h4>" . $row["division"] . "</h4></td></tr>";
+      echo "<tr><td colspan='5' class='text-center'><h4>" . utf8_encode($row["division"]) . "</h4></td></tr>";
     }
     if($contador == 1)
     {
         echo '<tr>
         <th scope="row">' . $contador . ' <img style="max-height:50px" style="margin-left:50px" src="../assets/img/1st.png"></th>
-        <td>'. $row["nombreproyecto"] . '</td>
-        <td>'. $row["nombreasesor"] . '</td>
-        <td>'. $row["division"] . '</td>
-        <td>'. $row["puntos"] . '</td>
+        <td>'. utf8_encode($row["nombreproyecto"]) . '</td>
+        <td>'. utf8_encode($row["nombreasesor"]) . '</td>
+        <td>'. utf8_encode($row["division"]) . '</td>
+        <td>'. utf8_encode($row["puntos"]) . '</td>
         </tr>';
     }
     elseif($contador == 2)
     {
         echo '<tr>
         <th scope="row">' . $contador . ' <img style="max-height:50px" style="margin-left:50px" src="../assets/img/2nd.png"></th>
-        <td>'. $row["nombreproyecto"] . '</td>
-        <td>'. $row["nombreasesor"] . '</td>
-        <td>'. $row["division"] . '</td>
-        <td>'. $row["puntos"] . '</td>
+        <td>'. utf8_encode($row["nombreproyecto"]) . '</td>
+        <td>'. utf8_encode($row["nombreasesor"]) . '</td>
+        <td>'. utf8_encode($row["division"]) . '</td>
+        <td>'. utf8_encode($row["puntos"]) . '</td>
         </tr>';
     }
     elseif($contador == 3){
     echo '<tr>
     <th scope="row">' . $contador . ' <img style="max-height:50px" style="margin-left:50px" src="../assets/img/3rd.png"></th>
-    <td>'. $row["nombreproyecto"] . '</td>
-    <td>'. $row["nombreasesor"] . '</td>
-    <td>'. $row["division"] . '</td>
-    <td>'. $row["puntos"] . '</td>
+    <td>'. utf8_encode($row["nombreproyecto"]) . '</td>
+    <td>'. utf8_encode($row["nombreasesor"]) . '</td>
+    <td>'. utf8_encode($row["division"]) . '</td>
+    <td>'. utf8_encode($row["puntos"]) . '</td>
     </tr>';
     }
     if($contador >= 4)
     {
         echo '<tr>
         <td scope="row">' . $contador . ' </td>
-        <td>'. $row["nombreproyecto"] . '</td>
-        <td>'. $row["nombreasesor"] . '</td>
-        <td>'. $row["division"] . '</td>
-        <td>'. $row["puntos"] . '</td>
+        <td>'. utf8_encode($row["nombreproyecto"]) . '</td>
+        <td>'. utf8_encode($row["nombreasesor"]) . '</td>
+        <td>'. utf8_encode($row["division"]) . '</td>
+        <td>'. utf8_encode($row["puntos"]) . '</td>
         </tr>';
     }
 

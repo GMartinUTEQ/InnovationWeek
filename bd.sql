@@ -12,6 +12,8 @@ create table evento(
 
 );
 
+insert into evento (nombreevento, contrasena, activo, fechainicio, fechafin) values('Semana innovacion 2021', md5('uteq2021'), 1, '2021-08-09 07:30', '2021-08-12 15:00');
+
 create table pregunta(
     idpregunta int  PRIMARY KEY,
     idevento int not null DEFAULT 0,
@@ -35,6 +37,8 @@ Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('
 Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Servicio de mantenimiento o de electrodomésticos a domicilio', 'José Carlos Salinas Cruz', 'División Industrial');
 Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Automatización de iluminación', 'José Carlos Salinas Cruz', 'División Industrial');
 Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Simulación de Cluster Digital para autos con soporte de protocolo CAN/OBD-II', 'Hugo Enrique Calderón López', 'División Industrial');
+Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Síntesis de grafeno para la elaboración de placas PCB mediante impresiones 3D.', 'Minerva Robles Agudo.', 'División Industrial');
+Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Desarrollo de lentes inteligentes para la implementación de realidad mixta.', 'Gerardo Vergara García.', 'División Industrial');
 Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'NAHUS SAS', '', 'División Económico Administrativa');
 Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Belle Peau SAS', '', 'División Económico Administrativa');
 Insert into proyecto (idevento, nombreproyecto, nombreasesor, division) values('1', 'Ecology Trash', '', 'División Económico Administrativa');

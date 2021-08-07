@@ -42,7 +42,7 @@
                     <h2 style="margin-top:45px">Acceso al sistema</h2>
                     
                 </div>
-                <form action="dashboard.php" method="post" class="was-validated">
+                <form action="DashBoard.php" method="post" class="was-validated">
                     
                     <div class="form-group" style="margin-top:45px">
                         <label for="usrpass">Contraseña:</label>
